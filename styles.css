@@ -1,0 +1,95 @@
+#title{
+    text-align: center;
+    color: rgb(255, 81, 38);
+    font-weight: 2px;
+    font-size: 50px;
+}
+
+
+body{
+    font-family: 'Poiret One', cursive;
+}
+
+h2{
+    text-align: center;
+    color: rgb(150, 46, 132); 
+}
+
+p{
+    text-align: center;
+    color: rgb(150, 46, 132);
+}
+
+ol{
+    text-align: center;
+    list-style-position: inside;
+}
+
+li{
+    text-align: center;
+    padding: 10px;
+}
+
+img{
+    margin: 0 auto;
+    display: block;
+}
+
+form{
+    margin: 0 auto;
+    text-align: center;
+}
+
+label{
+    padding: 10px;
+    color: rgb(60, 73, 143);
+}
+
+input, textarea {
+    font-size: 0.8em;
+    font-family: 'proxima-nova-soft', sans-serif;
+    border: 1px solid #ddd;
+    background: #fff;
+    padding: 10px;
+    transition: all 0.3s ease-in-out;
+    width: 25%; }
+
+nav p{
+    color: rgb(60, 73, 143);
+    font-size: 40px;
+    text-align: center;
+    margin: 0 auto;
+    font-family: 'Quicksand';
+}
+
+footer{
+    width: 100%;
+    bottom: 0;
+    position:fixed;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0 auto;
+    text-align: center;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+}
+
+nav li {
+    display: inline-block;
+
+}
+
+nav li a {
+    display: block;
+    color: rgb(60, 73, 143);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav li a:hover {
+    background-color: rgb(231, 221, 218);
+}
