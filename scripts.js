@@ -3,16 +3,16 @@ $(function() {
         e.preventDefault();
         var value = $("#gifInput").val();
         console.log(value);
-        var xhr = $.get("http://api.giphy.com/v1/gifs/search?q=" + value + "&api_key=cPhYjQSR2UZU8gafjTiH3C3yrxnanfW9&limit=1");
+        var xhr = $.get("http://api.giphy.com/v1/gifs/search?q=" + value + "&api_key=cPhYjQSR2UZU8gafjTiH3C3yrxnanfW9&limit=3");
         xhr.done(function(data) { 
             console.log("success got data", data); 
             var results = "";
-            results += "<h2>Your Results: </h2>";
-            /*for (var i=0; i<json.weather.length; i++) {
-                results += '<img src="http://openweathermap.org/img/w/' + json.weather[i].icon + '.png"/>';
-            }*/
-            results += '<img src =' + data[0].url + " ></img>"
-            
+            results += "<h2>Your Results: </h2><div id='images'>";
+            for (var i=0; i<3; i++) {
+                results += "<div class='image'>"
+                 results += "<img src=" +data.data[i].images.fixed_height.url + "> </div>"                  
+            }
+            results += "</div>";
             $("#gifResults").html(results);
         });
 

@@ -1,23 +1,27 @@
 #title{
     text-align: center;
-    color: rgb(255, 81, 38);
+    color: #4fcbb3;
     font-weight: 2px;
     font-size: 50px;
 }
 
+h4{
+    color: #787a7a;
+}
 
 body{
     font-family: 'Poiret One', cursive;
+    padding: 10px;
 }
 
 h2{
     text-align: center;
-    color: rgb(150, 46, 132); 
+    color: #d77689
 }
 
 p{
     text-align: center;
-    color: rgb(150, 46, 132);
+    color: #969e9d;
 }
 
 ol{
@@ -42,8 +46,30 @@ form{
 
 label{
     padding: 10px;
-    color: rgb(60, 73, 143);
+    size: 20px;
+    color: #3a8d7c;
 }
+
+#images {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+#images img{
+    margin: 0 auto;
+    height: 100%;
+    padding-right: 10px;
+    padding-left: 10px;
+    display: block;
+}  
+
+.image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    cursor: pointer;
+  }
 
 input, textarea {
     font-size: 0.8em;
